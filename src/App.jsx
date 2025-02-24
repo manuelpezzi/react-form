@@ -19,12 +19,14 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className="container mt-5">
         <h1>lista articoli </h1>
         <form onSubmit={handleSubmit}>
           <input type="text"
             value={newArticle}
-            onChange={(e) => setNewarticle(e.target.value)} />
+            onChange={(e) => setNewarticle(e.target.value)}
+            placeholder="aggiungi un articolo" />
+          <button type="submit">aggiungi articolo</button>
         </form>
         <ul>
           {articles.map((title, index) => (
