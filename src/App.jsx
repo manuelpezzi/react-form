@@ -27,7 +27,8 @@ const App = () => {
       <div className="container mt-5">
         <h1 className="text-center mb-4">lista articoli </h1>
         <form onSubmit={handleSubmit} className="mb-3 d-flex">
-          <input type="text"
+          <input
+            type="text"
             value={newArticle}
             onChange={(e) => setNewarticle(e.target.value)}
             placeholder="aggiungi un articolo" />
